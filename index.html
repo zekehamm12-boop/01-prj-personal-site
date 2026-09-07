@@ -2,10 +2,314 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Zeke Hammond, UC Merced Mechanical Engineering student exploring engineering, programming, CAD, and web development.">
+  <title>Zeke Hammond | Portfolio</title>
+
+  <!-- Font Awesome icons for the LevelUp -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Add your HTML content here -->
+
+  <!-- Navigation LevelUp -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">ZH</a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">ENGINEERING • PROGRAMMING • WEB DEVELOPMENT</p>
+        <h1>Hi, I'm <span>Zeke Hammond.</span></h1>
+        <h2>I like building things, learning how they work, and improving them.</h2>
+
+        <p class="hero-text">
+          I'm a Mechanical Engineering student at UC Merced with an aerospace focus.
+          My experience includes CAD, programming, engineering projects, and now web
+          development. This portfolio documents what I build as I continue developing
+          my technical skills.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn primary-btn" href="#projects">View My Projects</a>
+          <a class="btn secondary-btn" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="initials">ZH</div>
+        <p>Mechanical Engineering</p>
+        <p class="muted">Aerospace Focus</p>
+        <p class="muted">UC Merced • Class of 2027</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="section-number">01.</p>
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            I'm currently studying Mechanical Engineering at the University of California,
+            Merced with an interest in aerospace. A lot of my experience has come from
+            learning by actually building things, whether that means modeling a rocket,
+            programming an Arduino-controlled vehicle, working in CAD, or learning how
+            to create websites with HTML and CSS.
+          </p>
+
+          <p>
+            I enjoy problem solving and projects that combine design, engineering, and
+            technology. One of my current goals is to become more comfortable with web
+            development and GitHub so I can present my work more professionally and build
+            useful projects outside of my main engineering coursework.
+          </p>
+        </div>
+
+        <div class="quick-facts">
+          <div>
+            <span>School</span>
+            <strong>UC Merced</strong>
+          </div>
+          <div>
+            <span>Major</span>
+            <strong>Mechanical Engineering</strong>
+          </div>
+          <div>
+            <span>Focus</span>
+            <strong>Aerospace</strong>
+          </div>
+          <div>
+            <span>Graduation</span>
+            <strong>2027</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section alt-section" id="skills">
+      <div class="section-heading">
+        <p class="section-number">02.</p>
+        <h2>Skills</h2>
+      </div>
+
+      <p class="section-intro">
+        These are some of the tools and skills I have used through coursework,
+        engineering projects, and independent learning.
+      </p>
+
+      <!-- Icon LevelUp -->
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fa-brands fa-html5"></i>
+          <h3>HTML</h3>
+          <p>Building clear page structure and semantic website sections.</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-brands fa-css3-alt"></i>
+          <h3>CSS</h3>
+          <p>Styling layouts, spacing, typography, colors, and responsive designs.</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-brands fa-python"></i>
+          <h3>Python</h3>
+          <p>Programming, problem solving, calculations, and technical coursework.</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>C++ / MATLAB</h3>
+          <p>Engineering computation and programming fundamentals.</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-solid fa-cube"></i>
+          <h3>CAD & 3D Design</h3>
+          <p>Fusion 360, Onshape, Blender, and engineering modeling.</p>
+        </div>
+
+        <div class="skill-card">
+          <i class="fa-brands fa-github"></i>
+          <h3>GitHub</h3>
+          <p>Version control, saving project progress, and publishing web projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="section-number">03.</p>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-rocket project-icon"></i>
+            <span>Engineering</span>
+          </div>
+          <h3>Rocket Design Project</h3>
+          <p>
+            Worked on planning, modeling, and constructing a solid rocket design using
+            engineering drawings and CAD. The project involved preparing the rocket for
+            an AIAA launch and applying aerospace design concepts.
+          </p>
+          <div class="tags">
+            <span>CAD</span>
+            <span>Aerospace</span>
+            <span>3D Modeling</span>
+            <span>Design</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-microchip project-icon"></i>
+            <span>Programming</span>
+          </div>
+          <h3>Arduino Tank Project</h3>
+          <p>
+            Participated in an engineering project using Arduino code to control a small
+            tank. The programming controlled vehicle movement as well as vertical and
+            horizontal turret motion.
+          </p>
+          <div class="tags">
+            <span>Arduino</span>
+            <span>Programming</span>
+            <span>Electronics</span>
+            <span>Teamwork</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-laptop-code project-icon"></i>
+            <span>Web Development</span>
+          </div>
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            Designed and built this single-page website using HTML and CSS with AI as
+            a brainstorming and troubleshooting tool. The project helped me practice
+            page structure, styling, navigation, responsive design, and GitHub Pages.
+          </p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>GitHub</span>
+            <span>AI</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section alt-section" id="experience">
+      <div class="section-heading">
+        <p class="section-number">04.</p>
+        <h2>Experience & Involvement</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div>
+            <p class="timeline-date">Current</p>
+            <h3>UC Merced Engineering Student</h3>
+            <p>
+              Developing skills in mechanical and aerospace engineering while gaining
+              experience with programming, technical analysis, CAD, laboratory work,
+              and project-based problem solving.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div>
+            <p class="timeline-date">Student Organizations</p>
+            <h3>Robotics Club • NSBE • AIAA</h3>
+            <p>
+              Participated in engineering and professional organizations that support
+              teamwork, technical growth, networking, and hands-on learning.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div>
+            <p class="timeline-date">2022 – 2023</p>
+            <h3>Child Care Provider</h3>
+            <p>
+              Supervised and cared for a group of children while maintaining a safe and
+              supportive environment. The role strengthened communication, responsibility,
+              patience, and problem-solving skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <p class="section-number">05.</p>
+      <h2>Let's Connect</h2>
+      <p>
+        I'm always interested in learning opportunities, engineering projects,
+        internships, and chances to keep improving my technical skills.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:niiarmahhammond@ucmerced.edu">
+          <i class="fa-solid fa-envelope"></i>
+          Email Me
+        </a>
+
+        <!-- Replace # with your real LinkedIn profile URL -->
+        <a href="https://www.linkedin.com/in/nii-armah-e-hammond-1a6736331" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <i class="fa-brands fa-linkedin"></i>
+          LinkedIn
+        </a>
+
+        <!-- Replace # with your real GitHub profile URL -->
+        <a href="https://github.com/zekehamm12-boop" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Designed & built by Zeke Hammond • 2026</p>
+  </footer>
+
 </body>
 </html>
